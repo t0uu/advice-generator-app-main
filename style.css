@@ -1,0 +1,92 @@
+/* //Font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+/* // font-family: 'Manrope', sans-serif; */
+/* // ## Layout */
+
+/* // The designs were created to the following widths: */
+
+/* // - Mobile: 375px */
+/* // - Desktop: 1440px */
+
+/* // ## Colors */
+
+/* // ### Primary */
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    /* // ### Neutral */
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+
+}
+
+/* // ## Typography */
+
+/* // ### Body Copy */
+
+/* // - Font size (quote): 28px */
+
+
+@media(min-width:375px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        align-self: center;
+        text-align: center;
+        background-color:var(--Dark-Blue);
+        font-family: 'Manrope', sans-serif; 
+    }
+    .Container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        align-self: center;
+        margin: auto;
+        margin: 1rem;
+        max-width:400px;
+        max-height:fit-content;
+        background-color: var(--Dark-Grayish-Blue);
+        border-radius: 5px;
+    }
+
+    .Container h2{
+        padding-top: 1.1rem;
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--Neon-Green);
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }   
+    .Container .Advice{
+        padding: 0.6rem;
+        font-weight: 800;
+        font-size:28px;
+        color: var(--Light-Cyan)
+    }
+    .Container svg{
+        margin: 1rem;
+    }
+    .Container #Btn{
+        background-color: var(--Neon-Green);
+        border: none;
+        position: relative;
+        top: 20px;
+        margin-top: 1.1rem;
+        border-radius: 20px;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .Container #Btn:hover{
+        filter: drop-shadow(0 0 0.75rem var(--Neon-Green));
+    }
+    .Container #Btn img{
+        margin-top: 3px;
+        width: 1rem;
+        height: 1rem;
+    }
+}
